@@ -18,11 +18,12 @@ body {
 
 /* 3. 小説本文（preタグ）のデザイン */
 pre {
-    white-space: pre-wrap;    /* 折り返し有効 */
-    font-family: "游明朝", "YuMincho", "Hiragino Mincho ProN", "MS PMincho", serif;
-    font-size: 1.15em;        /* 読みやすい大きさ */
-    line-height: 1.9;         /* ハーメルン特有のゆったりした行間 */
-    letter-spacing: 0.03em;   /* 文字の間隔を微調整 */
+    white-space: pre-wrap;
+    /* ここを明朝体からゴシック体（システム標準）に変更 */
+    font-family: sans-serif; 
+    font-size: 1.1em;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
     color: #1a1a1a;
     border: none;
     margin: 20px 0;
