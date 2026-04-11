@@ -19,14 +19,27 @@ body {
 /* 3. 小説本文（preタグ）のデザイン */
 pre {
     white-space: pre-wrap;
-    /* ここを明朝体からゴシック体（システム標準）に変更 */
     font-family: sans-serif; 
-    font-size: 1.1em;
+    font-size: 1.2rem;       /* 1.1emより少し大きくし、基準を安定させました */
     line-height: 1.8;
     letter-spacing: 0.02em;
     color: #1a1a1a;
     border: none;
     margin: 20px 0;
+}
+
+/* スマホ用の特別設定：画面幅が600px以下の時 */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;      /* 左右の余白を削って本文の幅を確保 */
+    }
+    pre {
+        font-size: 1.3rem;  /* スマホではさらに文字を大きく */
+        line-height: 1.7;
+    }
+    h2 {
+        font-size: 1.2em;   /* タイトルは少し抑えめに */
+    }
 }
 
 /* 4. ナビゲーション（前・次・目次） */
