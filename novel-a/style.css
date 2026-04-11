@@ -34,7 +34,7 @@ pre {
         padding: 15px;      /* 左右の余白を削って本文の幅を確保 */
     }
     pre {
-        font-size: 1.5rem;  /* スマホではさらに文字を大きく */
+        font-size: 1.8rem;  /* スマホではさらに文字を大きく */
         line-height: 1.7;
     }
     h2 {
