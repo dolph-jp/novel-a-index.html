@@ -72,3 +72,11 @@ hr {
     border-top: 1px solid #eeeeee;
     margin: 30px 0;
 }
+
+/* 本文中の画像設定 */
+img {
+    max-width: 100%; /* 画面からはみ出さないようにする */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* 中央寄せにして上下に余白を作る */
+}
