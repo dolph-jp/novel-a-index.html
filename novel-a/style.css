@@ -93,7 +93,7 @@ ul {
 
 /* 2. リスト項目ごとの設定 */
 li {
-    margin-bottom: 15px;         /* 項目同士の上下間隔（押しやすさ重視） */
+    margin-bottom: 5px;         /* 項目同士の上下間隔（押しやすさ重視） */
     line-height: 1.5;            /* 行間を整える */
     text-align: left;            /* 左寄せを維持 */
 }
