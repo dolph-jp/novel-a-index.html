@@ -80,3 +80,18 @@ img {
     display: block;
     margin: 20px auto; /* 中央寄せにして上下に余白を作る */
 }
+
+/* 目次ページ専用の調整 */
+ul {
+    padding-left: 25px; /* リストの左余白 */
+}
+
+li {
+    margin-bottom: 15px; /* リンク同士の上下間隔を広げる */
+    line-height: 1.4;    /* 行間を整える */
+}
+
+li a {
+    font-size: 1.1rem;   /* 文字を少しだけ大きくする */
+    display: inline-block; /* タップ反応範囲を安定させる */
+}
