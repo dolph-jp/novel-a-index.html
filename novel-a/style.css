@@ -81,30 +81,26 @@ img {
     margin: 20px auto; /* 中央寄せにして上下に余白を作る */
 }
 
-/* 目次ページ専用の調整 */
+/* --- 目次ページ専用の調整 --- */
+
+/* 1. リスト全体の設定（左側に空間を作る） */
 ul {
-    padding-left: 25px; /* リストの左余白 */
+    list-style-position: inside; /* 中ポチを内側に入れる */
+    padding-left: 50px;          /* ★ここを増やすほど全体が右にスライドします */
+    margin-left: 0;              /* 余計なマージンをリセット */
+    padding-top: 10px;
 }
 
+/* 2. リスト項目ごとの設定 */
 li {
-    margin-bottom: 15px; /* リンク同士の上下間隔を広げる */
-    line-height: 1.4;    /* 行間を整える */
-}
-
-li a {
-    font-size: 1.1rem;   /* 文字を少しだけ大きくする */
-    display: inline-block; /* タップ反応範囲を安定させる */
-}
-
-/* 目次のリスト全体を右に寄せる設定 */
-ul {
-    list-style-position: inside; /* 中ポチを内側に入れる（お好みで） */
-    padding-left: 40px;          /* 左側の余白。数値を大きくするほど右に寄ります */
-    margin-left: 10px;           /* 全体の位置微調整用 */
-}
-
-/* リスト項目ごとの調整 */
-li {
-    margin-bottom: 12px;         /* 項目間の上下の間隔 */
+    margin-bottom: 15px;         /* 項目同士の上下間隔（押しやすさ重視） */
+    line-height: 1.5;            /* 行間を整える */
     text-align: left;            /* 左寄せを維持 */
+}
+
+/* 3. リンクの文字設定 */
+li a {
+    font-size: 1.1rem;           /* 文字を少し大きく */
+    display: inline-block;       /* タップの反応範囲を安定させる */
+    padding: 5px 0;              /* 上下に少しだけ余白を作ってさらに押しやすく */
 }
